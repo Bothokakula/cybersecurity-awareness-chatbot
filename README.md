@@ -3,13 +3,14 @@
 [![CI](https://github.com/Bothokakula/cybersecurity-awareness-chatbot/actions/workflows/ci.yml/badge.svg)](https://github.com/Bothokakula/cybersecurity-awareness-chatbot/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
+[![Live demo](https://img.shields.io/badge/Live_demo-Try_it_now-FF4B4B?logo=streamlit&logoColor=white)](https://cyberaware-za.streamlit.app)
 
 CyberAware is a Python chatbot that teaches everyday South Africans how to stay safe online. It answers questions about phishing, OTP and SIM-swap fraud, passwords, POPIA and more, and includes tools that **explain** why a message or password is risky, not just whether it is.
 
 > **Why I built it:** South Africans are heavily targeted by banking-app, OTP and SIM-swap scams. Most awareness material is long PDFs nobody reads. I wanted something people could just *ask*, with locally relevant examples.
 
 ![Chat screenshot](docs/screenshots/chat.png)
-
+**👉 Try it live: [cyberaware-za.streamlit.app](https://cyberaware-za.streamlit.app)**
 ## Features
 
 | Feature | What it does |
