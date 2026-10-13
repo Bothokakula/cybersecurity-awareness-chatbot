@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cyberaware"
+version = "1.0.0"
+description = "A cybersecurity awareness chatbot with phishing and password checkers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Botho Kakula" }]
+dependencies = ["scikit-learn>=1.4"]
+
+[project.optional-dependencies]
+web = ["streamlit>=1.35"]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+cyberaware = "cyberaware.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"cyberaware.data" = ["*.json", "*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

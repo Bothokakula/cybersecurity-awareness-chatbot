@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Someone phones you claiming to be from your bank's fraud team and asks you to read out the OTP you just received. What should you do?",
+    "options": ["Read it out quickly so they can stop the fraud", "Hang up and call the bank on the number on your card", "Send it to them by SMS instead", "Ask them to prove who they are, then share it"],
+    "answer": 1,
+    "explanation": "Banks never ask for your OTP. Hang up and contact the bank through an official number."
+  },
+  {
+    "question": "Which of these passwords is the strongest?",
+    "options": ["P@ssw0rd2026!", "Botho1999", "river-quantum-lamp-tuesday", "qwerty123456"],
+    "answer": 2,
+    "explanation": "A long passphrase of random words is much harder to crack than short, predictable substitutions."
+  },
+  {
+    "question": "Your phone suddenly shows 'No service' and you start getting bank login alerts. What might be happening?",
+    "options": ["A normal network update", "SIM swap fraud", "Your battery is low", "A software bug"],
+    "answer": 1,
+    "explanation": "An unexplained loss of signal plus account alerts is a classic SIM swap warning sign. Contact your network and bank immediately."
+  },
+  {
+    "question": "What does the '1' in the 3-2-1 backup rule stand for?",
+    "options": ["One backup per year", "One copy stored offsite or offline", "One password for all backups", "One USB drive"],
+    "answer": 1,
+    "explanation": "3 copies, on 2 types of storage, with 1 copy offsite or offline."
+  },
+  {
+    "question": "A 'friend' on WhatsApp says they sent you a 6-digit code by mistake and asks you to forward it. What is it most likely to be?",
+    "options": ["Their bank OTP", "Your WhatsApp registration code: sharing it lets them take over your account", "A discount voucher", "A harmless typo"],
+    "answer": 1,
+    "explanation": "This is a common account-takeover scam. Never share verification codes."
+  },
+  {
+    "question": "Which South African law governs how organisations must protect your personal information?",
+    "options": ["PAIA", "POPIA", "The Consumer Protection Act", "The Companies Act"],
+    "answer": 1,
+    "explanation": "The Protection of Personal Information Act (POPIA) sets the rules, enforced by the Information Regulator."
+  },
+  {
+    "question": "A buyer on a marketplace sends you a 'proof of payment' and asks you to hand over the item now. What should you do?",
+    "options": ["Hand it over: a POP is proof", "Wait until the money reflects in your own bank account", "Ask for a second POP", "Accept if the POP has a bank logo"],
+    "answer": 1,
+    "explanation": "POPs are easy to fake. Only release goods once the funds have cleared in your own account."
+  },
+  {
+    "question": "Which form of multi-factor authentication is generally the strongest?",
+    "options": ["SMS codes", "Security questions", "Hardware security keys and passkeys", "Email codes"],
+    "answer": 2,
+    "explanation": "Security keys and passkeys resist phishing. SMS is still far better than no MFA."
+  },
+  {
+    "question": "Your supplier emails to say their bank details have changed and the next invoice must go to a new account. What's the safest step?",
+    "options": ["Update the details and pay", "Reply to the email to confirm", "Call the supplier on a number you already have to verify", "Pay half to the old account and half to the new one"],
+    "answer": 2,
+    "explanation": "This is classic business email compromise. Verify through a separate, trusted channel."
+  },
+  {
+    "question": "A job offer asks you to pay R1,500 for 'training materials' before you start. This is most likely:",
+    "options": ["Normal for graduate programmes", "A job scam", "A tax requirement", "A refundable deposit"],
+    "answer": 1,
+    "explanation": "Legitimate employers don't charge you to work for them."
+  }
+]

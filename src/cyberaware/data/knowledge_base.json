@@ -1,0 +1,601 @@
+{
+  "version": 1,
+  "intents": [
+    {
+      "id": "greeting",
+      "title": "Greeting",
+      "small_talk": true,
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "howzit",
+        "sawubona",
+        "hi there"
+      ],
+      "answer": "Hi! I'm CyberAware, your cybersecurity awareness assistant. Ask me about phishing, passwords, OTP scams, SIM swaps, POPIA and more, or try the phishing and password checkers."
+    },
+    {
+      "id": "thanks",
+      "title": "Thanks",
+      "small_talk": true,
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thank you so much",
+        "cheers",
+        "appreciate it",
+        "ngiyabonga",
+        "dankie"
+      ],
+      "answer": "You're welcome! Stay sharp out there. 🔐"
+    },
+    {
+      "id": "goodbye",
+      "title": "Goodbye",
+      "small_talk": true,
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "later",
+        "quit",
+        "exit"
+      ],
+      "answer": "Goodbye! Remember: when in doubt, don't click, and never share your OTP."
+    },
+    {
+      "id": "capabilities",
+      "title": "What can you do?",
+      "small_talk": true,
+      "patterns": [
+        "what can you do",
+        "help",
+        "how do you work",
+        "what topics do you know",
+        "menu",
+        "options",
+        "who are you",
+        "what are you"
+      ],
+      "answer": "I can explain common cyber threats and how to protect yourself. I also have three tools:\n\n- **Phishing checker**: paste a suspicious SMS, email or WhatsApp message and I'll point out red flags.\n- **Password checker**: estimates how strong a password is (nothing is stored).\n- **Quiz**: test what you know.\n\nTry asking: *\"How do I spot a phishing email?\"* or *\"What is a SIM swap?\"*"
+    },
+    {
+      "id": "phishing",
+      "title": "Phishing emails",
+      "patterns": [
+        "what is phishing",
+        "how do i spot a phishing email",
+        "how to recognise phishing",
+        "suspicious email",
+        "fake email from my bank",
+        "email asking me to verify my account",
+        "is this email a scam",
+        "email with a link to login",
+        "phishing attack",
+        "fraudulent email",
+        "i clicked a link in a suspicious message",
+        "clicked on a phishing link"
+      ],
+      "answer": "**Phishing** is when criminals pretend to be a trusted organisation (a bank, SARS, a courier, your university) to trick you into clicking a link, opening an attachment or handing over details.\n\nCommon red flags:\n- Urgency or threats: *\"Your account will be suspended in 24 hours\"*\n- A generic greeting like *\"Dear customer\"*\n- A sender address or link that doesn't match the real organisation's domain\n- Requests for passwords, PINs, OTPs or card details\n- Unexpected attachments or prizes",
+      "tips": [
+        "Hover over links to see the real address before clicking.",
+        "Go to the organisation's website or app yourself instead of using the link.",
+        "Paste the message into the Phishing checker for a second opinion.",
+        "Clicked a link already? Don't enter any details. If you did, change that password straight away and contact the organisation."
+      ],
+      "related": [
+        "smishing",
+        "otp_scams",
+        "bec"
+      ]
+    },
+    {
+      "id": "smishing",
+      "title": "SMS and phone scams (smishing and vishing)",
+      "patterns": [
+        "what is smishing",
+        "what is vishing",
+        "scam sms",
+        "suspicious text message",
+        "fake sms from bank",
+        "someone called me pretending to be the bank",
+        "phone call scam",
+        "parcel delivery sms",
+        "whatsapp message scam",
+        "caller asked for my details"
+      ],
+      "answer": "**Smishing** is phishing by SMS or WhatsApp, and **vishing** is phishing by voice call. Scammers often pose as your bank's fraud department, a courier with a \"failed delivery\", or a cellphone network offering an upgrade.\n\nA real bank will never ask you to read out an OTP, PIN or password over the phone, or to move money to a \"safe account\".",
+      "tips": [
+        "Hang up and call the number on the back of your card or on the official website.",
+        "Don't trust caller ID: numbers can be spoofed.",
+        "Never install an app or \"remote support\" tool because a caller asked you to."
+      ],
+      "related": [
+        "otp_scams",
+        "phishing",
+        "sim_swap"
+      ]
+    },
+    {
+      "id": "otp_scams",
+      "title": "OTP scams",
+      "patterns": [
+        "what is an otp",
+        "someone asked for my otp",
+        "should i share my one time pin",
+        "otp scam",
+        "can i give the bank my otp",
+        "they asked me to read the code sent to my phone",
+        "one time password fraud",
+        "verification code request"
+      ],
+      "answer": "A **one-time PIN (OTP)** is the final key that approves a payment, a new device or a password reset. Whoever has it can act as you.\n\n**Never share an OTP with anyone**, including someone who says they're from your bank, a courier or a store. Legitimate organisations will never ask for it.\n\nAlways read the full OTP message: it usually says what it's approving (for example, a payment amount or a new device link).",
+      "tips": [
+        "If you get an OTP you didn't request, someone may be trying to access your account. Contact your bank through official channels.",
+        "Treat OTPs like cash."
+      ],
+      "related": [
+        "smishing",
+        "sim_swap",
+        "whatsapp_takeover"
+      ]
+    },
+    {
+      "id": "sim_swap",
+      "title": "SIM swap fraud",
+      "patterns": [
+        "what is a sim swap",
+        "sim swap fraud",
+        "my phone suddenly has no signal",
+        "someone swapped my sim",
+        "how to protect against sim swap",
+        "sim card hijacking",
+        "lost signal and got bank messages"
+      ],
+      "answer": "In **SIM swap fraud**, a criminal convinces or bribes someone at a cellphone network to move your number onto their SIM card. They then receive your OTPs and can take over your banking and other accounts.\n\nWarning sign: your phone suddenly shows *No service* or *Emergency calls only* for no clear reason.",
+      "tips": [
+        "If you lose signal unexpectedly, contact your network and your bank immediately.",
+        "Ask your network about extra SIM swap protection such as a PIN or in-store ID checks.",
+        "Use an authenticator app instead of SMS for 2FA where possible."
+      ],
+      "related": [
+        "otp_scams",
+        "mfa"
+      ]
+    },
+    {
+      "id": "passwords",
+      "title": "Strong passwords",
+      "patterns": [
+        "how do i create a strong password",
+        "what makes a good password",
+        "password tips",
+        "is my password strong",
+        "how long should my password be",
+        "password best practices",
+        "should i use the same password everywhere",
+        "passphrase"
+      ],
+      "answer": "A strong password is **long, unique and unpredictable**.\n\n- Use a **passphrase** of 4+ random words, e.g. `harbour-velvet-cactus-ninety` (don't use this one!).\n- Aim for at least **12–15 characters**.\n- **Never reuse** passwords: when one site is breached, attackers try the same login everywhere (*credential stuffing*).\n- Avoid names, birthdays, sports teams and patterns like `Password123!`.",
+      "tips": [
+        "Use a password manager so you only need to remember one strong master password.",
+        "Try the Password checker tab to see how a password holds up."
+      ],
+      "related": [
+        "password_manager",
+        "mfa"
+      ]
+    },
+    {
+      "id": "password_manager",
+      "title": "Password managers",
+      "patterns": [
+        "what is a password manager",
+        "should i use a password manager",
+        "are password managers safe",
+        "how do i remember all my passwords",
+        "where should i store my passwords",
+        "saving passwords in browser"
+      ],
+      "answer": "A **password manager** generates and stores a unique, strong password for every account, so you only have to remember one master password.\n\nReputable managers encrypt your vault so that even the provider can't read it. That's far safer than reusing passwords, writing them in a notes app or keeping them in a spreadsheet.",
+      "tips": [
+        "Protect the password manager itself with a strong master passphrase and 2FA.",
+        "Built-in browser and phone password managers are a good start if you use one device ecosystem."
+      ],
+      "related": [
+        "passwords",
+        "mfa"
+      ]
+    },
+    {
+      "id": "mfa",
+      "title": "Multi-factor authentication (2FA/MFA)",
+      "patterns": [
+        "what is two factor authentication",
+        "what is 2fa",
+        "what is mfa",
+        "multi factor authentication",
+        "should i turn on 2fa",
+        "authenticator app",
+        "is sms 2fa safe",
+        "two step verification"
+      ],
+      "answer": "**Multi-factor authentication (MFA or 2FA)** means logging in needs something you *know* (a password) **plus** something you *have* (your phone or a security key) or *are* (a fingerprint).\n\nEven if your password leaks, an attacker still can't get in without the second factor. Turn it on for email, banking, social media and cloud storage first.\n\nStrongest to weakest: security keys and passkeys → authenticator apps → SMS codes (SMS is still much better than nothing).",
+      "tips": [
+        "Save your backup or recovery codes somewhere safe.",
+        "Never approve a login prompt you didn't start (*MFA fatigue* attacks)."
+      ],
+      "related": [
+        "passwords",
+        "sim_swap"
+      ]
+    },
+    {
+      "id": "public_wifi",
+      "title": "Public Wi-Fi",
+      "patterns": [
+        "is public wifi safe",
+        "free wifi at the mall",
+        "coffee shop wifi",
+        "can i do banking on public wifi",
+        "airport wifi",
+        "should i use a vpn",
+        "hotspot security",
+        "campus wifi safety"
+      ],
+      "answer": "Public Wi-Fi is convenient but risky. Attackers can set up fake hotspots with names like *\"Mall Free WiFi\"* to intercept traffic or show fake login pages.\n\nMost sites use HTTPS today, which protects much of your traffic, but it's still wise to avoid sensitive tasks on open networks.",
+      "tips": [
+        "Use mobile data or your own hotspot for banking.",
+        "Confirm the exact network name with staff.",
+        "Turn off auto-connect to open networks.",
+        "A reputable VPN adds a layer of protection on untrusted networks."
+      ],
+      "related": [
+        "malware"
+      ]
+    },
+    {
+      "id": "ransomware",
+      "title": "Ransomware",
+      "patterns": [
+        "what is ransomware",
+        "my files are encrypted",
+        "hackers want payment to unlock files",
+        "ransomware attack",
+        "how to protect against ransomware",
+        "should i pay the ransom"
+      ],
+      "answer": "**Ransomware** is malware that encrypts your files or systems and demands payment, often in cryptocurrency, to unlock them. Many groups also steal data and threaten to leak it.\n\nPaying is no guarantee you'll get your data back, and it funds further crime.",
+      "tips": [
+        "Keep offline or versioned backups and test that you can restore them.",
+        "Keep your operating system and apps updated.",
+        "If infected, disconnect the device from the network and get professional help."
+      ],
+      "related": [
+        "backups",
+        "updates",
+        "malware"
+      ]
+    },
+    {
+      "id": "malware",
+      "title": "Malware and suspicious attachments",
+      "patterns": [
+        "what is malware",
+        "what is a virus",
+        "i opened a suspicious attachment",
+        "downloaded a strange file",
+        "is this attachment safe",
+        "my computer is acting weird",
+        "trojan",
+        "spyware",
+        "do i need antivirus",
+        "cracked software"
+      ],
+      "answer": "**Malware** is any software designed to harm you: viruses, trojans, spyware, keyloggers and ransomware. It often arrives through email attachments, fake software updates, cracked or pirated apps, and malicious ads.\n\nBe especially careful with `.exe`, `.zip`, `.iso` and macro-enabled Office files (`.docm`, `.xlsm`) that you weren't expecting.",
+      "tips": [
+        "Keep built-in protection (such as Microsoft Defender) switched on and updated.",
+        "Only install apps from official stores or vendor websites.",
+        "If you opened something suspicious, disconnect from the internet, run a full scan and change passwords from a different, clean device."
+      ],
+      "related": [
+        "ransomware",
+        "updates",
+        "phishing"
+      ]
+    },
+    {
+      "id": "social_engineering",
+      "title": "Social engineering",
+      "patterns": [
+        "what is social engineering",
+        "manipulation tactics hackers use",
+        "pretexting",
+        "tailgating",
+        "someone pretending to be it support",
+        "how do hackers trick people",
+        "impersonation"
+      ],
+      "answer": "**Social engineering** targets people rather than technology. Attackers use **urgency, authority, fear, curiosity or helpfulness** to get you to bypass normal checks.\n\nExamples: a fake \"IT support\" call asking for your password, someone following you through a secure door (*tailgating*), or a message from a \"manager\" asking for an urgent favour.",
+      "tips": [
+        "Slow down: pressure is a red flag.",
+        "Verify requests through a separate, trusted channel.",
+        "It's okay to say no and check first."
+      ],
+      "related": [
+        "phishing",
+        "bec",
+        "deepfakes"
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "Software updates",
+      "patterns": [
+        "why should i update my phone",
+        "are software updates important",
+        "should i install updates",
+        "patching",
+        "old version of windows",
+        "outdated software risk"
+      ],
+      "answer": "Updates fix **security vulnerabilities** that attackers actively exploit. An unpatched phone, browser or operating system is one of the easiest ways in.\n\nTurn on automatic updates for your OS, browser and apps, and replace devices that no longer receive security updates.",
+      "tips": [
+        "Restart when prompted: many updates only apply after a reboot."
+      ],
+      "related": [
+        "malware",
+        "ransomware"
+      ]
+    },
+    {
+      "id": "backups",
+      "title": "Backups",
+      "patterns": [
+        "how should i back up my files",
+        "backup strategy",
+        "what is the 3-2-1 rule",
+        "lost my files",
+        "cloud backup",
+        "how often should i backup"
+      ],
+      "answer": "Backups are your safety net against ransomware, theft and hardware failure. Follow the **3-2-1 rule**:\n\n- **3** copies of your data\n- on **2** different types of storage\n- with **1** copy offsite or offline\n\nCloud services with version history count as an offsite copy.",
+      "tips": [
+        "Test restoring a file now and then: a backup you can't restore isn't a backup."
+      ],
+      "related": [
+        "ransomware"
+      ]
+    },
+    {
+      "id": "social_media",
+      "title": "Social media privacy",
+      "patterns": [
+        "social media privacy",
+        "what should i not post online",
+        "oversharing online",
+        "instagram privacy settings",
+        "is it safe to post my location",
+        "facebook privacy",
+        "digital footprint"
+      ],
+      "answer": "What you share publicly can be used for scams, identity theft and guessing security questions: your birthday, ID number, school, pet's name, home address or travel plans.\n\nReview your privacy settings, limit who can see your posts, and think before posting real-time locations or photos of documents, tickets or boarding passes.",
+      "tips": [
+        "Search your own name online to see what others can find."
+      ],
+      "related": [
+        "social_engineering",
+        "account_hacked"
+      ]
+    },
+    {
+      "id": "popia",
+      "title": "POPIA (South Africa)",
+      "patterns": [
+        "what is popia",
+        "protection of personal information act",
+        "data privacy law south africa",
+        "information regulator",
+        "my personal information was leaked",
+        "data breach popia",
+        "company shared my data without consent"
+      ],
+      "answer": "The **Protection of Personal Information Act (POPIA)** is South Africa's main data-protection law. It sets conditions for how organisations collect, use, store and share personal information, and requires them to keep it secure.\n\nIf an organisation suffers a security compromise involving personal information, it must notify the **Information Regulator** and the affected people as soon as reasonably possible.\n\nIf you believe your information was misused, you can complain to the organisation first and then to the Information Regulator.",
+      "tips": [
+        "After a breach notice, change affected passwords and watch for targeted phishing.",
+        "This is general information, not legal advice."
+      ],
+      "related": [
+        "account_hacked",
+        "phishing"
+      ]
+    },
+    {
+      "id": "account_hacked",
+      "title": "My account was hacked",
+      "patterns": [
+        "my account was hacked",
+        "someone logged into my account",
+        "i think i've been hacked",
+        "my email was compromised",
+        "my instagram was hacked",
+        "what do i do if i get hacked",
+        "strange login alert",
+        "my password was leaked"
+      ],
+      "answer": "Act quickly:\n\n1. **Change the password** from a device you trust, and change it anywhere else you reused it.\n2. **Turn on 2FA** and sign out of all other sessions.\n3. **Check recovery settings**: attackers often change the recovery email or phone number.\n4. **Review activity**: forwarding rules, sent messages, connected apps, payments.\n5. **Warn your contacts** if messages were sent from your account.\n6. Use the platform's official account-recovery process if you're locked out.",
+      "tips": [
+        "If money or banking details are involved, contact your bank immediately."
+      ],
+      "related": [
+        "mfa",
+        "passwords",
+        "scammed"
+      ]
+    },
+    {
+      "id": "scammed",
+      "title": "I've been scammed",
+      "patterns": [
+        "i've been scammed",
+        "i gave my banking details to a scammer",
+        "money was taken from my account",
+        "unauthorised transaction",
+        "i shared my otp",
+        "what do i do if i was defrauded",
+        "report fraud",
+        "how to report a scam in south africa"
+      ],
+      "answer": "Time matters. Do these straight away:\n\n1. **Call your bank** using the number on the back of your card or in the official app. Block cards and stop or dispute transactions.\n2. **Change passwords and PINs** for banking and email.\n3. **Report it to SAPS** and get a case number, which banks and insurers often need.\n4. **Keep evidence**: screenshots, messages, phone numbers, transaction references.\n5. **Watch for follow-up scams**, such as people offering to \"recover\" your money for a fee.",
+      "tips": [
+        "Being scammed isn't a sign of stupidity: these criminals are professionals. Reporting helps protect others."
+      ],
+      "related": [
+        "otp_scams",
+        "account_hacked"
+      ]
+    },
+    {
+      "id": "online_shopping",
+      "title": "Safe online shopping",
+      "patterns": [
+        "is this online store legit",
+        "fake online shop",
+        "safe online shopping",
+        "too good to be true deal",
+        "marketplace scam",
+        "buyer sent proof of payment",
+        "facebook marketplace scam",
+        "black friday scams"
+      ],
+      "answer": "Fake stores and marketplace scams spike around sales like Black Friday.\n\nRed flags:\n- Prices that are far too low\n- A newly created website, poor contact details, or only EFT or crypto accepted\n- Sellers who pressure you to pay outside the platform\n- Buyers who send a \"proof of payment\" (POP) and ask you to release goods: **POPs can be faked**, so wait until the money clears in your own account",
+      "tips": [
+        "Use card payments or secure checkout services that offer buyer protection."
+      ],
+      "related": [
+        "phishing",
+        "scammed"
+      ]
+    },
+    {
+      "id": "qr_codes",
+      "title": "QR code scams (quishing)",
+      "patterns": [
+        "are qr codes safe",
+        "qr code scam",
+        "what is quishing",
+        "scanned a qr code on a poster",
+        "qr code parking payment"
+      ],
+      "answer": "**Quishing** uses QR codes to hide malicious links. Criminals stick fake QR codes over real ones on parking meters, posters and restaurant tables, or put them in emails to get past link filters.\n\nAfter scanning, check the web address your phone shows **before** opening it, and never enter login or card details on a site you reached through an unexpected QR code.",
+      "related": [
+        "phishing"
+      ]
+    },
+    {
+      "id": "whatsapp_takeover",
+      "title": "WhatsApp account takeover",
+      "patterns": [
+        "someone asked for my whatsapp code",
+        "whatsapp verification code scam",
+        "whatsapp hacked",
+        "friend asked me to send a code by mistake",
+        "how to secure whatsapp",
+        "whatsapp two step verification"
+      ],
+      "answer": "A common scam: a \"friend\" (whose account is already hijacked) says they sent you a code by mistake and asks you to forward it. That code is **your** WhatsApp registration code, and sharing it hands over your account.\n\nProtect yourself: in WhatsApp go to **Settings → Account → Two-step verification** and set a PIN.",
+      "tips": [
+        "If a friend's message seems odd, call them on a different channel to check."
+      ],
+      "related": [
+        "otp_scams",
+        "account_hacked"
+      ]
+    },
+    {
+      "id": "bec",
+      "title": "Invoice and business email fraud",
+      "patterns": [
+        "what is business email compromise",
+        "supplier changed bank details",
+        "invoice fraud",
+        "ceo asked me to make urgent payment",
+        "email asking to update banking details",
+        "fake invoice",
+        "my boss asked me to buy gift cards",
+        "manager emailed asking for an urgent favour"
+      ],
+      "answer": "In **business email compromise (BEC)**, criminals impersonate a supplier, landlord or executive (sometimes from a real, hacked mailbox) and ask for payment to \"new\" bank details.\n\nAlways **verify changes to banking details by phone**, using a number you already have rather than one in the email.",
+      "related": [
+        "phishing",
+        "social_engineering"
+      ]
+    },
+    {
+      "id": "deepfakes",
+      "title": "AI, deepfake and investment scams",
+      "patterns": [
+        "what is a deepfake",
+        "ai voice scam",
+        "voice cloning scam",
+        "fake video of a celebrity investment",
+        "family member calling asking for money urgently",
+        "ai generated scam",
+        "investment scam",
+        "is bitcoin investment safe",
+        "crypto scam",
+        "guaranteed returns investment",
+        "forex trading scam"
+      ],
+      "answer": "AI tools can now clone voices from short clips and create convincing fake videos. Scammers use them for fake *\"family emergency\"* calls and for celebrity-endorsed investment adverts.\n\nAgree on a **family safe word**, and verify urgent requests by calling the person back on a number you know.",
+      "tips": [
+        "Be sceptical of investment adverts promising guaranteed high returns, whoever appears to endorse them."
+      ],
+      "related": [
+        "social_engineering",
+        "smishing"
+      ]
+    },
+    {
+      "id": "lost_device",
+      "title": "Lost or stolen phone",
+      "patterns": [
+        "my phone was stolen",
+        "lost my phone",
+        "what to do if my laptop is stolen",
+        "screen lock",
+        "find my device",
+        "remote wipe"
+      ],
+      "answer": "If your phone or laptop is lost or stolen:\n\n1. Use **Find My (Apple) or Find My Device (Google)** to locate, lock or wipe it.\n2. Ask your network to **block the SIM** so it can't receive your OTPs.\n3. Tell your bank, and change key passwords from another device.\n4. Report it to SAPS for a case number.\n\nPrevention: use a strong screen lock, enable device encryption, and keep backups.",
+      "related": [
+        "sim_swap",
+        "backups"
+      ]
+    },
+    {
+      "id": "job_scams",
+      "title": "Job and internship scams",
+      "patterns": [
+        "fake job offer",
+        "job scam",
+        "they want me to pay for training before the job",
+        "internship scam",
+        "recruiter asked for money",
+        "work from home scam",
+        "too good to be true job"
+      ],
+      "answer": "Job scams target students and graduates. Warning signs:\n\n- You're asked to **pay** for training, uniforms, a medical or a \"placement fee\"\n- An interview held only over WhatsApp or Telegram\n- An offer without a proper interview\n- Requests for your ID, bank details or OTP before any contract exists\n\nLegitimate employers don't charge you to work for them.",
+      "tips": [
+        "Check the vacancy on the company's official careers page."
+      ],
+      "related": [
+        "phishing",
+        "social_engineering"
+      ]
+    }
+  ]
+}
